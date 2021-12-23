@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="test_form2.html">
         <label for="name">ชื่อ</label>
-        <input type="text" name="fname" id=""/>
-        <br/>
+        <input type="text" name="fname" id="" />
+        <br />
         <label for="surname">นามสกุล</label>
         <input type="text" name="surname" id="" value="Mahaphon" placeholder="plese surname" size="10" />
-        <br/>
+        <br />
 
         <label for="programming_language">plese select your most like programming language</label>
         <select name="programming_language" id="" size="6" multiple>
@@ -24,11 +26,46 @@
             <option value="java">java</option>
             <option value="kotlin" selected>kotlin</option>
         </select>
-        <br/>
+        <br />
         <label for="desc"></label>
-        <textarea name="description" id="desc" ></textarea>
+        <textarea name="description" id="desc"></textarea>
         <input type="submit" value="Ok" onclick="alert('HEllo')" />
+
+        //สามารถเขียนด้วย onclink ให้เกิดการส่งค่า เขียนjava scriptได้
+        <br />button <input type="button" value="hello" onclick="console.log('hello Gasper onclick')" /> </input>
+        <br />button <input type="checkbox" name="fruit" value="banana" /> <label for="fruit">banana</label>
+        <br />button <input type="checkbox" name="fruit" value="apple" /> <label for="fruit">apple</label>
+        <br />button <input type="checkbox" name="fruit" value="orange" /> <label for="fruit">orange</label>
+        <br />button <input type="checkbox" name="fruit" value="coconut" /> <label for="fruit">coconut</label>
+
+        //color&การเก็บค่าสีโดยใช้ java script
+        <br /> color <input type="color" name="color_main" />
+        <br />คุณเลือก สี <span id="color_you_selected">NONE</span>
+        <br /><input type="button" onclick="console.log(document.forms[0]['color_main'].value)" value="Get color"
+            style="font-size: 1.5em;"></input>
+
+        <br /> date <input type="date" />
+        <br /> datetime-local <input type="datetime-local">
+        //email
+        <br /> email <input type="email" />
+        //ถ้าส่งไฟล์ทางฝั่งback endจะส่งแบบgetหรือpostไม่ได้ ต้องส่งแบบ mutipart
+        <br />file <input type="file" />
+
+        <br />hiden <input name="h" type="hidden" value="this_is_hidden"/>
+        <br/> <input type="submit" value="Ok">
+        <br />image <input type="image" src="247274983_422878129204913_7886296546012170204_n.jpg" width=300 />
+        <br />month <input type="month" />
+        <br />number <input type="number" />
+        <br />password <input type="password">
+        <br /> <input type="radio">
+
+
+
+
+
+
 
     </form>
 </body>
+
 </html>
